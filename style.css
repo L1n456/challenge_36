@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-Blue-intro-mail-bg: hsl(217, 28%, 15%);
+    --Dark-Blue-main-bg: hsl(218, 28%, 13%);
+    --Dark-Blue-footer-bg: hsl(216, 53%, 9%);
+    --Dark-Blue-ts-bg: hsl(219, 30%, 18%);
+    --Cyan : hsl(176, 68%, 64%);
+    --Blue : hsl(198, 60%, 50%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+}
+
+header{
+    padding: 3%;
+    background-color: var(--Dark-Blue-intro-mail-bg);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+}
+
+header img{
+    width: 10%;
+}
+
+header .menu {
+    width: 20%;
+    display: flex;
+    gap: 15%;
+}
+
+header .menu p:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    background-color: var(--Dark-Blue-main-bg);
+}
+
+main p{
+    font-family: "open sans";
+}
+
+main h1,h2{
+    font-family: "raleway";
+}
+
+main section{
+    margin-bottom: 5%;
+}
+
+main .top{
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 60% 110%;
+    background-color: var(--Dark-Blue-intro-mail-bg);
+    text-align: center;
+    color: var(--White);
+}
+
+main .top img{
+    width: 50%;
+}
+
+main .top h1{
+    font-family: "raleway",sans-serif;
+    margin: 5% 25% 3% 25%;
+    font-size: 33px;
+}
+
+main .top p{
+    padding: 0 31%;
+    line-height: 1.5em;
+    margin-bottom: 3%;
+}
+
+main .top button{
+    color: var(--White);
+    font-family: "open sans";
+    font-weight: 600;
+    background: linear-gradient(to right,#4fc5d3 , var(--Blue));
+    padding: 1% 5%;
+    border-radius: 30px;
+    margin-bottom: 10%;
+}
+
+main .grids{
+    color: var(--White);
+    padding: 0 5%;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+main .grids .grid{
+    text-align: center;
+}
+
+main .grid h2{
+    font-family: "raleway",sans-serif;
+    margin: 3% 0;
+}
+
+main .grid p{
+    padding: 0 8%;
+}
+
+main .middle{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+main .middle .left{
+    width: 50%;
+}
+
+main .middle .right{
+    color: var(--White);
+}
+
+main .middle h1{
+    margin-bottom: 3%;
+    font-size: 40px;
+    padding-right: 30%;
+}
+
+main .middle p{
+    line-height: 1.5em;
+    margin-bottom: 3%;
+    padding-right: 10%;
+}
+
+main .middle .link{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+main .middle .link a{
+    color: var(--Cyan);
+    text-decoration: none;
+    font-family: "open sans";
+}
+
+main .link::after{
+    content: "";
+    width: 14%;
+    height: 1px;
+    background-color: var(--Cyan);
+    position: absolute;
+    margin-top: 2.5%;
+}
+
+main .middle .link a:hover{
+    color: var(--White);
+}
+
+main .link:hover::after{
+    background-color: var(--White);
+}
+
+main .link:hover .arrow{
+    fill: var(--White);
+}
+
+
+main .flexs{
+    display: flex;
+    gap: 5%;
+    padding: 5%;
+    background-image: url("images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: 5% 10%;
+}
+
+main .flexs .flex{
+    width: 30%;
+    background-color: var(--Dark-Blue-ts-bg);
+    color: var(--White);
+    padding: 2% 3%;
+    border-radius: 10px;
+}
+
+main .flex p{
+    font-size: 13px;
+}
+
+main .flex .profile{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main .profile img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+main .profile p{
+    font-size: 15px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: -10%;
+    font-weight: 600;
+}
+
+main .profile small{
+    margin-top: 15%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: -10%;
+    font-family: "open sans";
+
+    opacity: 0.8;
+}
+
+main .bottom{
+    position: relative;
+    z-index: 1;
+    background-color: var(--Dark-Blue-intro-mail-bg);
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--White);
+    padding: 3% 5%;
+    box-shadow: 4px 8px 10px black;
+    text-align: center;
+}
+
+main .bottom h1{
+    font-size: 30px;
+}
+
+main .bottom .p{
+    margin: 3% 0;
+    font-size: 13px;
+    padding: 0 10%;
+    line-height: 1.5em;
+}
+
+main .bottom input{
+    padding: 2% 30% 2% 2%;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: -15%;
+}
+
+main .bottom button{
+    color: var(--White);
+    font-family: "open sans";
+    background: linear-gradient(to right,#4fc5d3 , var(--Blue));
+    padding: 2% 5%;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+main button:hover{
+    background: #8cdae4;
+    cursor: pointer;
+}
+
+.error{
+    color: var(--Light-Red);
+    text-align: left;
+    opacity: 0;
+    margin-top: 0;
+    font-size: 13px;
+    padding: 0 10%;
+}
+
+footer{
+    background-color: var(--Dark-Blue-footer-bg);
+    margin-top: -10%;
+    padding-top: 15%;
+    padding: 15% 5% 5% 5%;
+    color: var(--White);
+}
+
+footer p{
+    opacity: 0.8;
+}
+
+footer .logo{
+    width: 10%;
+    display: block;
+    margin-bottom: 5%;
+}
+
+footer .btm{
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+footer .info{
+    width: 50%;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2,1fr);
+    margin-right: 5%;
+}
+
+footer .info .plc{
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    line-height: 1.5em;
+}
+
+footer .info .nbr, footer .info .mail{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+footer .list{
+    width: 20%;
+    display: flex;
+}
+
+footer ul {
+    margin-right: 20%;
+}
+
+footer .list li{
+    list-style: none;
+    font-family: "open sans";
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+footer .list li:hover{   
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer .logos{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 8%;
+    gap: 5%;
+}
+
+footer .logos svg{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.fb{
+    transform: scale(0.8);
+}
+
+footer .logos svg path{
+    fill: var(--White);
+}
+
+footer .logos svg:hover path{
+    cursor: pointer;
+    fill: var(--Cyan);
+}
+
+footer .logos svg:hover{
+    cursor: pointer;
+    border: 1px solid var(--Cyan);
+}
+
+@media screen and (max-width:375px) {
+    header{
+        padding: 5%;
+        justify-content: right;
+        gap: 20%;
+    }
+    
+    header img{
+        width: 20%;
+    }
+    
+    header .menu {
+        width: 60%;
+        font-size: 13px;
+    }
+    
+    main section{
+        margin-bottom: 10%;
+    }
+    
+    main .top{
+        background-image: url("images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 60% 110%;
+        background-color: var(--Dark-Blue-intro-mail-bg);
+        padding-top: 10%;
+    }
+    
+    main .top img{
+        width: 60%;
+    }
+    
+    main .top h1{
+        margin: 5%;
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+    
+    main .top p{
+        padding: 0 5%;
+        margin-bottom: 5%;
+    }
+    
+    main .top button{
+        padding: 3% 20%;
+        border: transparent;
+    }
+    
+    main .grids{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .grid p{
+        padding: 0%;
+        margin-bottom: 20%;
+    }
+    
+    main .middle{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        margin-bottom: 15%;
+    }
+    
+    main .middle .left{
+        width: 100%;
+    }
+    
+    main .middle h1{
+        margin: 5% 0;
+        font-size: 20px;
+        padding-right: 0%;
+    }
+    
+    main .middle p{
+        line-height: 1.5em;
+        margin-bottom: 5%;
+        padding-right: 0%;
+        font-size: 15px;
+    }
+    
+    main .link::after{
+        content: "";
+        width: 45%;
+        height: 2px;
+        position: absolute;
+        margin-top: 7%;
+    }
+    
+    main .flexs{
+        flex-direction: column;
+        padding: 5%;
+        background-image: url("images/bg-quotes.png");
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position: 10% 0%;
+    }
+    
+    main .flexs .flex{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+        padding: 5%;
+    }
+    
+    main .flex p{
+        font-size: 12px;
+        opacity: 0.9;
+    }
+    
+    main .profile img{
+        width: 40%;
+    }
+    
+    main .profile p{
+        font-size: 13px;
+        margin-left: -15%;
+    }
+    
+    main .profile small{
+        margin-top: 13%;
+        font-size: 12px;
+        margin-left: -15%;
+    }
+    
+    main .bottom{
+        width: 90%;
+        padding: 5%;
+    }
+    
+    main .bottom h1{
+        font-size: 25px;
+    }
+    
+    main .bottom .p{
+        margin: 5% 0;
+        padding: 0 5%;
+    }
+    
+    main .bottom input{
+        display: block;
+        padding: 2% 42% 2% 5%;
+        margin: 5% 0;
+    }
+    
+    main .bottom button{
+        display: block;
+        padding: 4% 0;
+        width: 100%;
+        border: transparent;
+    }
+    
+    .error{
+        padding: 5%;
+    }
+    
+    footer{
+        margin-top: -40%;
+        padding-top: 40%;
+        padding: 55% 10% 5% 10%;
+    }
+    
+    footer .logo{
+        width: 30%;
+        margin-bottom: 10%;
+    }
+    
+    footer .btm{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30%;
+    }
+    
+    footer .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0%;
+        margin-bottom: 10%;
+    }
+    
+    footer .info .plc, footer .info .nbr, footer .info .mail{
+        margin-bottom: 5%;
+    }
+    
+    footer .list{
+        width: 100%;
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    footer ul{
+        margin-bottom: 5%;
+    }
+    
+    footer .list li{
+        list-style: none;
+        font-weight: 500;
+        margin-bottom: 5%;
+    }
+    
+    footer .logos{
+        margin: 5% auto;
+        width: 30%;
+    }
+}
+
